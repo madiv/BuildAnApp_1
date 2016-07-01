@@ -66,34 +66,18 @@ namespace BuildAnApp_1
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-            //int count = 0;
-            //while (count < 10)
-            //{
-            //    count = count + 1;
-            //}
-
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    count = count - 1;
-            //}
-
-            //myLabel.Text = "the answer is " + count;
-
-            int result = 0;
-            int x = 6;
-            while (x > 3)
+            int count = 0;
+            while (count < 10)
             {
-                result = result + x;
-
-                x = x - 1;
+                count = count + 1;
             }
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
-                result = result + i;
+                count = count - 1;
             }
 
-            myLabel.Text = "Результат равен " + result;
+            mylabel.text = "the answer is " + count;
         }
     }
 }
