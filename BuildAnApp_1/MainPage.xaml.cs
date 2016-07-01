@@ -77,7 +77,7 @@ namespace BuildAnApp_1
                 count = count - 1;
             }
 
-            mylabel.text = "the answer is " + count;
+            myLabel.Text = "the answer is " + count;
         }
     }
 }
