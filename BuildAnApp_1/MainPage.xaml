@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="BuildAnApp_1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BuildAnApp_1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="Show a message" HorizontalAlignment="Center" Click="button_Click"/>
+        <Button x:Name="button1" Content="If/else" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Another conditional test" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="button2_Click"/>
+        <Button x:Name="button3" Content="A loop" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="button3_Click"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Left" Margin="455,108,0,0" 
+                   Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Style="{StaticResource BodyTextBlockStyle}"/>
+
+    </Grid>
+</Page>
